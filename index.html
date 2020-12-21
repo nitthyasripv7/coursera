@@ -1,13 +1,20 @@
 <!DOCTYPE html>
-<html>
-    <head ng-app="testapp">
+<html ng-app="testapp">
+    <head >
         <meta charset="=utf-8">
-        <script scr="angular.min.js"></script>
-        <script scr="app.js"></script>
-        <title>name calculator</title>
-        <body>
-            <h1>testing</h1>
-            {{name}}
-        </body>
+       <script src="angular.min.js"></script>
+       <script src="app.js"></script>
+        <title> test name calculator</title>
     </head>
+        <body ng-controller="testcontroller" >
+            <div >
+ <!--              {{name}}         
+                {{sayhello()}}--> 
+                <input type="text" ng-model="name" ng-keyup="displaynumeric();">
+            </div>
+            <div>
+                total value is:{{totalvalue}}
+            </div>
+        </body>
+    
 </html>
